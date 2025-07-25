@@ -8,20 +8,20 @@ import (
 
 func main() {
 	v := secret.File("my-key", ".secrets")
-	err := v.Set("demo_key1", "123 value")
-	if err != nil {
-		panic(err)
-	}
+	// err := v.Set("demo_key1", "123 value")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	err = v.Set("demo_key2", "456 value")
-	if err != nil {
-		panic(err)
-	}
+	// err = v.Set("demo_key2", "456 value")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	err = v.Set("demo_key3", "789 value")
-	if err != nil {
-		panic(err)
-	}
+	// err = v.Set("demo_key3", "789 value")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
 	plain, err := v.Get("demo_key1")
 	if err != nil {
